@@ -30,4 +30,4 @@ phpunit.phar
 /templates.old
 # web
 /web/assets
-/web/images/* 
+/web/images
