@@ -1,0 +1,5 @@
+<div class="alert alert-info alert-dismissable">
+	<i class="glyphicon glyphicon-exclamation-sign"></i> <small>{{{labels.requiredFields}}}</small>
+</div>
+<div class="errorSummary">{{#errorSummary}}{{{ errorSummary }}}{{/errorSummary}}</div>
+<input class="hidden" name="{{csrf_param}}" value="{{csrf_token}}">

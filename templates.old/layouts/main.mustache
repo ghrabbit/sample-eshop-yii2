@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<head>
+    <meta charset="utf-8">
+    <title>{{appName}} : {{pageTitle}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content>
+    <meta name="author" content>
+
+	<link rel="icon" href="{{baseUrl}}/favicon.ico"/>
+    <!--link rel="stylesheet" type="text/css" href="{{staticUrl}}/css/main.css"/-->
+    <link rel="stylesheet" type="text/css" href="{{vendorUrl}}/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="{{vendorUrl}}/bootstrap/dist/css/bootstrap-theme.min.css"/>
+    <!--link rel="stylesheet" type="text/css" href="{{vendorUrl}}/selectize/css/selectize.bootstrap3.css"/-->
+    <link rel="stylesheet" type="text/css" href="{{staticUrl}}/css/site.css"/>
+    
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+	<script src="{{vendorUrl}}/jquery/dist/jquery.min.js"></script>
+    <script src="{{vendorUrl}}/bootstrap/dist/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+
+    {{{topNavbar}}}
+	
+	<div class="container">
+	  <div class="row">
+        <div class="col-md-12 col-lg-12">
+		<!--breadcrumbs-->
+	      {{{breadcrumbs}}}
+	    </div>
+	  </div>
+	  
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+          <div class="sidebar-nav hidden-small">
+			{{{topsideMenu}}}{{{userMenu}}}{{{cartMenu}}}
+		  </div><!--/.well -->
+        </div><!--/col-->
+        <div class="content-part col-sm-8 col-md-9 col-lg-9">
+          {{{content}}}
+        </div><!--/col-->
+      </div><!--/row-->
+	</div><!--/container-->
+	
+    <footer class="well-">
+	  <div id="footer">
+	   <div class="container">
+	     <div class="row">
+		   <div class="col-md-12">
+	         <div class="text-center">
+	          <p>{{{rights}}}</p>
+             </div>
+	       </div>
+	     </div>
+	     <div class="row">
+	       <div class="col-md-9">
+			<a href="#" class="yii-logo">Yii</a>
+			<div class="text-muted">The Fast, Secure and Professional PHP Framework</div>
+		  </div>
+		  <div class="col-md-9">
+			<a href="#" class="mustache-logo">mustache</a>
+			<div class="text-muted">Logic-less templates.</div>
+		  </div>
+		  
+	      <div class="col-md-3">
+	        <div class="text-center">
+	          <!--<p>{{{rights}}}</p>-->
+            </div>
+	      </div>
+	      </div>
+	    </div>
+	  </div>
+    </footer>
+
+
+
+  </body>
+</html>
+
+<!-- This document saved from fluid.html -->

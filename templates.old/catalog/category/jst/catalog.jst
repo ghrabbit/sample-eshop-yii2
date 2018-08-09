@@ -1,0 +1,16 @@
+<!--
+category view
+-->
+<div class="col-xs-12 col-sm-6 col-md-4">
+		<div class="thumbnail">
+			<% if(!img_file) img_file = "truchet.gimp.png"; %>
+			<img  src="/images/product/small/<%= img_file %>">
+			<div class="caption">
+				<table><td height="60">
+					<h4><span class="subcategories-view" value="<%= id%>"><%= name%></span></h4>
+				</td></table>
+			</div>
+			<button class="btn btn-default btn-block subCategories-view" <% if(!relations.subCategories.length)  print("disabled=\"disabled\"");%>><i class="glyphicon glyphicon-barcode"></i> Sub categories</button>
+			<a class="btn btn-primary btn-block catProducts-view" <% if(!relations.products.length)  print("disabled=\"disabled\"");%> href="#shopping/cat<%=id%>/products"><i class="glyphicon glyphicon-shopping-cart"></i> Productes</a>
+		</div>	
+</div>

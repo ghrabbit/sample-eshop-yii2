@@ -1,0 +1,27 @@
+<!--
+category view
+-->
+<div class="col-xs-12 col-sm-6 col-md-4">
+		<div class="thumbnail">
+			<% if(!img_file) img_file = "truchet.gimp.png" %>
+			<img  src="/images/product/small/<%= img_file %>">
+			<div class="caption">
+				<!--<h4><a href="#shopping/index/<-%= id%>"><-%= name%></a></h4>-->
+				<table><td height="60">
+				<h4><span class="subcategories-view0" value="<%= id%>"><%= name%></span></h4>
+				<%if(name.length < 24) print("<p> </p>");%>
+				<!--small>
+				<-%=description%>
+				</small-->
+				</td></table>
+			</div>
+			<!--<-% if(!relations.subCategories.length) print("<p>Sub categories: " + relations.subCategories.length + "</p>"); %>-->
+			
+			<a class="btn btn-default btn-block subCategories-view" <% if(!relations.subCategories.length)  print("disabled=\"disabled\"");%> href="#shopping/cat<%= id%>"><i class="glyphicon glyphicon-barcode"></i> Sub categories</a>
+
+			<!--<-% if(!relations.products.length) print("<p>Products: " + relations.products.length + "</p>"); %>-->
+			
+			<a class="btn btn-primary btn-block catProducts-view" <% if(!relations.products.length)  print("disabled=\"disabled\"");%> href="#shopping/cat<%= id%>/productes"><i class="glyphicon glyphicon-shopping-cart"></i> Productes</a>
+
+		</div>	
+</div>

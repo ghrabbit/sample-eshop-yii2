@@ -1,0 +1,23 @@
+<!--
+category view
+-->
+<div class="col-xs-12 col-sm-6 col-md-4">
+		<div class="thumbnail">
+			<% if(img_file) {%>
+			<div class="clicimg">
+				<img  src="/images/product/small/<%= img_file %>">
+				<dl>
+					<dt></dt>
+					<dd><img src="/images/product/norm/<%= img_file %>"><p><h4><%=  name%></h4></p></dd>
+				</dl>
+			</div>
+			<% } %>
+			<div class="caption">
+				<!--<h4><a href="#shopping/index/<-%= id%>"><-%= name%></a></h4>-->
+				<h4><span class="category-view" value="<%= id%>"><%= name%></span></h4>
+				<small>
+				<%=description%>
+				</small>
+			</div>
+		</div>	
+</div>
