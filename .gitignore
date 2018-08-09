@@ -25,3 +25,9 @@ composer.phar
 phpunit.phar
 # local phpunit config
 /phpunit.xml
+
+# templates.old
+/templates.old
+# web
+/web/assets
+/web/images/* 
